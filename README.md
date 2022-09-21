@@ -3,6 +3,15 @@ The Python auto-instrumentation is a two option monkeypatch. You can either use 
 
 Or you can import the relevant auto-instrumentation libraries into your code which is very similar to both the Ruby/JS auto-instrumentation.
 
+This repo is using option #1 via `opentelemetry-instrument`
+
+### Instructions
+1. Run `docker.sh` to enter a Python container
+1. Run `pip install -r requirements.txt` to get the Python container ready
+1. Run `run.sh` to run server.py via `opentelemetry-instrument`
+1. `curl localhost:8081`
+1. You will see a span output to STDOUT. When you close the program with Ctrl+C it will output metrics to STDOUT
+
 ### Dependencies
 requirements.txt reflects the installation of:
 * flask
