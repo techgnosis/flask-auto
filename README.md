@@ -3,7 +3,7 @@ The Python auto-instrumentation is a two option monkeypatch. You can either use 
 
 Or you can import the relevant auto-instrumentation libraries into your code which is very similar to both the Ruby/JS auto-instrumentation.
 
-This repo is using option #1 via `opentelemetry-instrument`
+This repo is using option #1 via `opentelemetry-instrument`. Technically #1 and #2 are the same, as #1 just downloads the libraries for you.
 
 ### Instructions
 1. Run `docker.sh` to enter a Python container
